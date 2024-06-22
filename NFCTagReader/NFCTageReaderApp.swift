@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct universalLinkDemoApp: App {
+struct NFCTageReaderApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NFCView()
         }
     }
 }
